@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="qcharts_2" version="1.0">
+	<title>QT Charts + Orchestrator + some utilties in order to process mop files (csv)</title>
+	
+    <!--target name="trackICD" format="static library">
+		<dependencies>	
+		</dependencies>
+	</target>-->
+
+	<target name="qcharts_2" format="executable">
+		<dependencies>	
+			<!--prj name="qcharts_2" target="trackICD"/-->
+			<prj name="daa_icd" target="daa_datatypes_icd"/>
+			<library name="QT"/>
+			<library name="QtCharts"/>
+			<library name="QtNetwork"/>
+		</dependencies>
+	</target>
+		
+</project>
